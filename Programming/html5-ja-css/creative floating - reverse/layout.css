@@ -1,0 +1,77 @@
+html{
+  font-size: 62.5%
+}
+
+body{
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  background-color: lightgrey;
+}
+
+.main{
+  
+}
+.container{
+
+  display: grid;
+  grid-template-areas:
+      "image head"
+      "image para";
+  width: 100%;
+  padding-bottom: 10px;
+  grid-template-rows: auto;
+  grid-template-columns: 98px 162px;
+  margin: 10px 20px;
+}
+
+.container > header{
+
+  grid-area: head;
+  font-weight: bolder;
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  color:#627081;
+  padding-left: 1.2rem;
+}
+
+.container > figure{
+  grid-area: image;
+  grid-row: 1 / span 2;
+}
+
+
+.container > div{
+
+  line-height: 1.5rem;
+  font-size: 1.6rem;
+  grid-area: para;
+  padding-left: 1.2rem;
+  color:  #666;
+
+}
+
+.image img{
+  
+  padding: 5px;
+  border-top: solid 1px lightgrey;
+  border-left: solid 1px lightgrey;
+  border-bottom: solid 1px darkgrey;
+  border-right: solid 1px darkgrey;
+  background-color: white;
+  box-shadow: solid 3px darkgrey;
+  max-width: 100%;
+}
+
+
+.reverse{
+ display: grid;
+ grid-template-areas: 
+ "head image"
+ "para image";
+ width: 100%;
+ padding-bottom: 10px;
+ grid-template-rows: auto;
+ grid-template-columns: 172px 100px;
+ margin: 10px 20px;
+}
+

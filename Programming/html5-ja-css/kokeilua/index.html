@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokeilua</title>
+    <!-- Lisätään CSS-säännöt style-tagin head-osan loppuun -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #special {
+            background-color: #008002;
+            color: white;
+            font-size: 30px;
+            padding: 80px;
+        }
+
+        .muotoiltu {
+            background-color: #D3D3D3;
+
+            padding: 10px;
+        }
+        /*Sivun kuvat responsiivi*/
+        figure {
+            display: block;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tämä on sivun tärkein otsikko</h1>
+        <p id="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto rerum ipsam inventore
+            obcaecati atque possimus nulla accusantium corporis totam.</p>
+
+        <a href="images/html-tag.png" target="_blank" rel="noopener noreferrer">
+            <!--Kuva responsiiviseksi,img-tag pitää olla figure-tag sisällä-->
+            <figure>
+                <img src="images/html-tag.png" alt="cat is very grumpy">
+            </figure>
+        </a>
+        <p class="muotoiltu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto rerum ipsam
+            inventore obcaecati atque possimus nulla accusantium corporis totam.</p>
+        <p class="muotoiltu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto rerum ipsam
+            inventore obcaecati atque possimus nulla accusantium corporis totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto rerum ipsam inventore obcaecati
+            atque possimus nulla accusantium corporis totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto rerum ipsam inventore obcaecati
+            atque possimus nulla accusantium corporis totam.</p>
+    </main>
+    <footer>
+        <p>2021 copyright &copy; Deepika Malini Rajasekar</p>
+
+    </footer>
+</body>
+
+</html>

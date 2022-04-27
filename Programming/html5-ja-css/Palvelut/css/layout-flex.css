@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+/*Tämä web sivu on rakenettu mobile first*/
+body{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  padding:1rem;
+  background-color: lightsalmon;
+  color:darkmagenta;
+}
+.koulukuvat{
+   display: flex;
+   flex-flow: row wrap;
+}
+
+.koulukuvat>* {
+    flex-grow: 1;
+    flex: basis 100%;
+    border:solid white 1rem;
+    order: 2;
+    margin-bottom: 1rem;
+
+}
+.info{
+    padding:1rem;
+}
+figure > figcaption{
+    font-size: 2rem;
+    padding: 2rem;
+    font-style: italic;
+    background-color:blanchedalmond;
+}
+
+
+/*Tablet näkymän css-sännöt*/
+@media only screen and (min-width: 426px) {
+    body {
+      background-color: lightblue;
+    }
+    .koulukuvat>*{
+        flex-basis:40% ;
+    }
+  }
+  /*Laptop ja sitä surempian näkymien näkymän css-sännöt*/
+@media only screen and (min-width: 769px) {
+    body {
+      background-color:lightsalmon;
+    }
+    /* Laptop näkymästä lähtien 4 kuvaa rinnakkain*/
+    .koulukuvat>*{
+        flex-basis:20% ;
+    }
+  }

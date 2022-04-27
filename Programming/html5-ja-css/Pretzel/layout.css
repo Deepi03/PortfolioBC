@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+
+html {
+    font-size: 62.5%;
+  }
+
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  .logo {
+    flex-basis: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .uppercase1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  i {
+    font-style: italic;
+    color: darkgrey;
+  }
+  .block {
+    display: none;
+  }
+  #special {
+    background-color: #5e7c7e;
+    color: #fdf9f3;
+    padding: 1.4rem;
+   
+    background-image: url(./images/special-bg.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+  }
+  #wrapper {
+    background-image: url(./images/grunge.png);
+  }
+  .parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .parent > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .first_p {
+    margin-bottom: 1rem;
+  }
+
+  figure {
+    display: block;
+  }
+  hr {
+    margin: 2rem 0;
+    border: 1px solid lightgrey;
+  }
+.uppercase2 {
+  text-transform: uppercase;
+}
+#sidebar {
+    width: 100%;
+  }
+  #sidebar ul {
+    column-count: 2;
+  }
+  .callout {
+    background-color: #f9e9c7;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+  }
+  .blue {
+    color: #00b0f0;
+    text-decoration: underline;
+  }
+  nav ul li {
+    width: 20%;
+  }
+  li {
+    line-height: 1.6;
+  }
+   
+  
+  #main {
+    width: 100%;
+  }
+  .first {
+    text-align: center;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 1rem 1rem 0;
+  }
+  .footer {
+    color: lightslategray;
+    text-align: center;
+  }
+  footer {
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
+    margin-top: 3rem;
+  }
+
+
+  @media only screen and (min-width: 426px){
+    .block {
+        display: none;
+      }
+    }
+  
+    @media only screen and (min-width: 769px) {
+        .block {
+            display: block;
+            color:grey
+          }
+        .first_p{
+            margin-bottom: 1rem;
+            font-weight: bolder;
+        }
+          #main {
+            width: 60%;
+          }
+          #sidebar {
+            width: 40%;
+         
+            text-align: left;
+          }
+          .parent1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+          }
+          .parent1 > * {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 1rem;
+            font-size: 1.4rem;
+          }
+        }
+
+        @media only screen and (min-width: 320px) {
+
+            .logo{
+           
+                flex-basis: 0;
+                flex-grow: 2;
+                
+            }
+            .home{
+                
+            }
+            .about{
+               
+            }
+            .pretzels
+            {
+               
+            }
+            .shop{
+               
+            }
+        }

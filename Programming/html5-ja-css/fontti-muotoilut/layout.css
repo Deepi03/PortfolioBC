@@ -1,0 +1,84 @@
+/*otetaan käytöön google fontti open sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,600;1,700&display=swap');
+
+
+html{
+    font-size:62.5%; 
+    /* 62.5% x 16px = 10px */
+    /*2rem = 20px */
+    /*1.5rem = 15px */
+    /* 0.7rem =7px */
+}
+
+body{
+    
+    background-color: #384E4F;
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    background-color: #384E4F;
+    color:white;
+    margin:1rem;
+    padding:30px; 
+    border:solid white 1rem;
+}
+
+h1{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color:#A5977C;
+}
+h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #80F455;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+h5{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+h6{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+p strong{
+    font-weight: bold;
+    color:#02FFFF;
+    padding:0.5rem;
+}
+
+#emphasized{
+    font-style: italic;
+}
+#mark{
+    color: black;
+    background-color: #FFFF00;
+}
+#small{
+    font-size: smaller;
+    color: #fc1d09;
+}
+#overline{
+    text-decoration: line-through;
+}
+#underline{
+    text-decoration: underline;
+}
+#sub{
+    vertical-align: sub;
+}
+#sup{
+    vertical-align: super;
+}

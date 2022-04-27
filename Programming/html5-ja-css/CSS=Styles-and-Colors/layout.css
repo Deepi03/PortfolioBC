@@ -1,0 +1,222 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: -14rem;
+}
+#wrapper {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+#eka {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #40b3df;
+  padding: 6rem 10rem;
+  margin-left: -3rem;
+  top: 0;
+  left: 29%;
+  opacity: 0.5;
+  z-index: -1;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example1 {
+  from {
+    top: -250px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+#toka {
+  position: absolute;
+  background-color: #8ac007;
+  padding: 8rem 4rem 5rem 4rem;
+  margin: 5rem 5rem;
+  left: 33%;
+  opacity: 0.5;
+  z-index: -1;
+  animation-name: example2;
+  animation-duration: 5s;
+ animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example2 {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 120px;
+  }
+}
+
+#kolmas {
+  padding: 8rem 12rem;
+  border: solid 1rem #ee872a;
+  border-radius: 1rem;
+}
+
+#kappale1 {
+  font-family: monospace;
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+}
+
+#kappale2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  color: #44b5e1;
+  font-weight: bold;
+  margin-left: -3rem;
+}
+
+.magenta {
+  background-color: #b4009e;
+  padding: 3px 10px;
+  color: white;
+}
+
+figure,
+p {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 426px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  #eka {
+    padding: 6rem 14rem;
+    margin-left: -5rem;
+  }
+
+  #toka {
+    padding: 8rem 5rem 5rem 4rem;
+    margin: 5rem 8rem;
+  }
+ 
+  #kappale1 {
+    font-size: 1.8rem;
+  }
+
+  #kappale2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #wrapper {
+    padding: 2rem;
+    margin: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+
+    margin-top: -18rem;
+  }
+  #eka {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #40b3df;
+    padding: 9rem 16rem;
+    top: 0;
+    left: 29%;
+  }
+
+  #toka {
+    position: absolute;
+    background-color: #8ac007;
+    padding: 10rem 6rem;
+    margin: 2rem 2rem;
+    left: 33%;
+    opacity: 0.5;
+  }
+  @keyframes example2 {
+    from {
+      left: -30px;
+    }
+    to {
+      left: 250px;
+    }
+  }
+
+  #kolmas {
+    padding: 10rem;
+    border: solid 1rem #ee872a;
+    border-radius: 1rem;
+    margin: 0 8rem;
+  }
+  #kappale1 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+
+  #kappale2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin-left: -4rem;
+  }
+}
+
+@media only screen and (min-width: 1530px) {
+    h1 {    
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        margin-top: -35rem;
+        margin-bottom: 2.2rem;
+
+    }
+    #eka {
+        padding: 11rem 30rem;
+        margin-left: 1rem;
+        
+    }
+
+    #toka {
+        margin-top: 5rem;
+        padding: 16rem 10rem;
+    }
+    @keyframes example2 {
+        from {
+          left: -30px;
+        }
+        to {
+          left: 550px;
+        }
+      }
+
+    #kolmas {
+        padding: 18rem;
+        margin: 0 30rem;
+    }
+
+    #kappale1 {
+        font-size: 3rem;
+    letter-spacing: 2rem;
+    }
+
+    #kappale2 {
+        font-size: 3rem;
+    letter-spacing: 2rem;
+    margin-left: -8rem;
+    }
+}

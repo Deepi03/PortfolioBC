@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Navigointi sännöt*/
+.nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%;
+}
+/*Vanhemman säänöt*/
+.nav ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  background-color: black;
+  padding: 2rem;
+  top: 0;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+.nav ol li {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+/*lapsien säännöt*/
+.nav ol .child1 {
+  flex-grow: 2;
+  text-align: left;
+}
+/*
+.parent{
+    background-color: #05080C;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:2rem;
+  
+  
+  
+}
+
+.parent > *{
+    flex-basis: 6px;
+    flex-grow: 1;
+    color: white;
+}
+.child1{
+    flex-grow: 2;
+    
+}
+.child2{
+    flex-grow: 1;
+}*/
+.main {
+  background-color: #323232;
+
+  margin-top: 2rem;
+  padding: 2rem;
+  padding-top: 7rem;
+}
+.img {
+  background-image: url(https://source.unsplash.com/user/erondu/1600x900);
+  padding: 3.3rem;
+}
+#portfolio {
+  background-color: rgb(0 0 0 / 60%);/*visible bg*/
+}
+.orange {
+  color: #ec6a11;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.etunimi {
+  padding-bottom: 1.25rem;
+}
+.next-to-etunimi {
+  padding-bottom: 1.25rem;
+}
+.ol-esimerkki {
+  list-style: decimal;
+  color: #d8a611;
+  font-size: 2rem;
+  padding-left: 3.5rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.menneisyys {
+  background-color: #f4f4f4;
+}
+.menneisyys-p {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem 0 2rem 1rem;
+}
+.menneisyys-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menneisyys-article > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  border: solid 0.25rem lightgrey;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1.5rem;
+}
+.btn-primary {
+  font-size: 1.5rem;
+  color: #ce8730;
+}
+hr {
+  margin: 2rem 0;
+  border: 1px solid skyblue;
+}
+.nykyisyys {
+}
+.nykyisyys-h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ec6a11;
+  padding-bottom: 2rem;
+}
+
+.nykyisyys-article figure {
+  display: block;
+  float: left;
+  width: 300px;
+  margin-right: 2rem;
+  
+}
+
+.nykyisyys-article figure img {
+  max-width: 100%;
+}
+
+.nykyisyys-p {
+  font-size: 2rem;
+  color: lightgray;
+  padding-bottom: 4rem;
+}
+
+.tuulevaisuus-article figure {
+  display: block;
+  float: right;
+  width: 300px;
+  margin-right: 2rem;
+  
+}
+
+.tuulevaisuus-article figure img {
+  max-width: 100%;
+}
+.tulevaisuus-p {
+  font-size: 2rem;
+  color: lightgray;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+}
+
+form .form-width {
+  max-width: 100%;
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+form input {
+  display: inline-block;
+  width: 60%;
+}
+
+form ul li {
+  padding-bottom: 1rem;
+}
+
+form .button {
+  padding: 1rem;
+  background-color: #ec6a11;
+  color: white;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+.center {
+  text-align: center;
+}
+
+footer p {
+  font-size: 2rem;
+  color: white;
+}
+
+.clearfix:after{
+  content: "";
+  display:none;
+  clear: both;
+}
+
+@media only screen and (min-width: 426px) {
+  .nav ol {
+    font-size: 1rem;
+  }
+  .nav ol li {
+    padding-right: 2rem;
+  }
+
+  .nykyisyys-article figure {
+    width: 400px;
+  }
+  .tuulevaisuus-article figure {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .nav ol {
+    font-size: 2rem;
+  }
+  .nav ol li {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+  }
+  /*lapsien säännöt*/
+  .nav ol .child1 {
+    flex-grow: 2;
+    text-align: left;
+  }
+}
