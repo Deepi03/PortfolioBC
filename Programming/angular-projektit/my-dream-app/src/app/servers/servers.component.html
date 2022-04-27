@@ -1,0 +1,28 @@
+
+<section class="app-servers">
+    <h1>I'm in the  Servers Component</h1>
+
+    <label>Server name</label>
+
+    <!-- event binding -->
+   <!-- <input type="text" class="form-control" (input) = "onUpdateServerName($event)"> -->
+
+   <!-- two-way binding affects both tempalte and ts -->
+   <input type="text" class="form-control margin" [(ngModel)] = "serverName">
+    <button [disabled]="!allowNewServer" class="btn btn-info margin" (click) = "onCreateServer($event)">Add server</button>
+      <hr>
+      <!-- <p class="sisennys">{{serverName}}</p>-->
+      <!-- <p class="">{{serverCreationStatus}}</p>  -->
+
+      <p *ngIf ="serverCreated" class="sisennys">Server was created!Server name is {{serverName}}</p>
+      
+    
+
+      <!--  <p class="sisennys">The button is enabled {{ allowNewServer }}- string interpolationnon p-taginnsisällä,tämä näky selaimessa...</p> -->
+        <!-- string interpolation -->
+      <!-- <p class="sisennys" [innerHTML]="allowNewServer">this statement which is inside p tag will not be displayed in browser bcz of innerHTML </p> -->
+      <!--property binding-->
+
+     
+     <app-server [serverName] = "serverNameToChild"  *ngFor  = "let server  of servers" ></app-server>
+</section> 

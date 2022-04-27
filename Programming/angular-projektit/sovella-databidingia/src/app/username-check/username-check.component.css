@@ -1,0 +1,21 @@
+p{
+    color: darkcyan;
+    margin-left: 10rem;
+}
+input{
+    padding-right: 30rem;
+}
+button{
+    margin-left: 27rem;
+}
+.sisennys{
+    margin: 1rem;
+}
+
+.home{
+   padding: 2rem;
+}
+
+.center{
+    text-align: center;
+}

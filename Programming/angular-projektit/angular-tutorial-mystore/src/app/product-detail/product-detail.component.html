@@ -1,0 +1,22 @@
+<h4>Product Details</h4>
+<div class="m-3 card rounded border border border-secondary">
+  <div *ngIf="phoneDetail.imgUrl">
+    <figure class="phones">
+      <img [src]="phoneDetail.imgUrl" alt="Card image" />
+    </figure>
+    <div class="card-body">
+      <h3 class="card-title">{{ phoneDetail.name }}</h3>
+      <h4 class="card-title">{{ phoneDetail.price | currency }}</h4>
+      <p class="card-text">{{ phoneDetail.longDescription }}</p>
+      <button class="btn btn-info" (click)="addToCart(phoneDetail.id)">
+        Add to Cart
+      </button>
+      <div class="pt-2">
+        <a (click)="goBack()">
+          <fa-icon [icon]="faLongArrowAltLeft"></fa-icon>
+          Go back
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

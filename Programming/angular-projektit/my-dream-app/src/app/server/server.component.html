@@ -1,0 +1,10 @@
+
+<section [ngStyle] = "{backgroundColor : getColor()}" 
+         [ngClass] = "{'online' : serverStatus === 'online'}" class="app-server"> 
+             <!-- ngStyle changes the background color of the element -->
+         <!-- directive ngClass  is added to html element section if serverStatus is online  -->
+
+    <h1>server component</h1>
+    <p>{{'Server'}} with ID {{serverId}} is {{getServerStatus()}} .</p>
+    <p>Server Name is {{serverName}}</p>
+</section>

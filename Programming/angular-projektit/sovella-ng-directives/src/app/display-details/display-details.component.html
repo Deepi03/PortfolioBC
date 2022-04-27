@@ -1,0 +1,17 @@
+
+
+<button class="btn btn-success dsp-btn"  (click) = "displayDetails($event)" [disabled] = "showDiv === 10">Display details</button>
+
+
+<div *ngIf = "showDiv % 2 === 0">
+    <p *ngFor = "let key of keyPressed"  class="number">{{key}}</p>
+    
+    <p class="sisennys lorem" *ngIf = "showPara"  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit nostrum aliquid dolor, doloremque, consequuntur earum quam accusantium quia magni reprehenderit quis animi corporis, esse qui dicta odio harum eligendi?</p>
+    
+ </div>
+<div *ngIf = "showDiv % 2 !== 0">
+
+    <p class="sisennys lorem" *ngIf = "showPara"  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit nostrum aliquid dolor, doloremque, consequuntur earum quam accusantium quia magni reprehenderit quis animi corporis, esse qui dicta odio harum eligendi?</p>
+    <p *ngFor = "let key of keyPressed"   [ngStyle] = "{backgroundColor : key >= 5 ? 'black' : 'white'}" [ngClass] = "{'array' : key >= 5}" class="number" >{{key}}</p>
+
+</div>

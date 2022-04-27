@@ -1,0 +1,15 @@
+    
+           <!-- Myynti-komponentin alku -->
+          <figure
+          [ngStyle]="{'background-color':instruction.status === 'ordered' ? 'red' : 'green' }"
+          class="card-image-top otsikko">
+            <fa-icon [icon]="faCoffee"></fa-icon>
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">Table {{ instruction.tableNumber }}</h2>
+            <p class="card-text">
+              <span *ngIf="instruction.status === 'ordered'" style="color: red; font-weight: 900;">ordered {{ instruction.orderNumber }} coffee.</span>
+              <span *ngIf="instruction.status === 'served'" style="color: green; font-weight: 900;">served {{ instruction.orderNumber }} coffee.</span>
+            </p>
+          </div>
+           <!-- Myynti-komponentin loppu -->

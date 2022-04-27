@@ -1,0 +1,41 @@
+<h3>Phone Models</h3>
+
+<div class="card-group">
+  <div
+    class="m-3 card rounded border border border-secondary"
+    *ngFor="let mobile of mobiles"
+  >
+    <div *ngIf="mobile.imgUrl">
+      <figure class="display-phones">
+        <img [src]="mobile.imgUrl" alt="Card image" />
+      </figure>
+      <div class="card-body">
+        <a routerLink="/product-detail/{{ mobile.id }}">
+          <h5 class="card-title">{{ mobile.name }}</h5>
+        </a>
+        <p class="card-text">{{ mobile.price | currency }}</p>
+
+        <p class="card-text" *ngIf="mobile.description">
+          Description: {{ mobile.description }}
+        </p>
+
+        <button class="btn btn-info ms-1" (click)="addToCart(mobile.id)">
+          Buy Now
+        </button>
+        <button class="btn btn-primary btn-sm ms-3 share" (click)="share()">
+          <fa-icon [icon]="faFacebook"></fa-icon>
+        </button>
+        <button class="btn btn-primary btn-sm ms-1 share" (click)="share()">
+          <fa-icon [icon]="faTwitterSquare"></fa-icon>
+        </button>
+        <button class="btn btn-primary btn-sm ms-1 share">
+          <fa-icon [icon]="faInstagramSquare" (click)="share()"></fa-icon>
+        </button>
+        <app-product-alerts
+          [product]="mobile"
+          (notify)="onNotify()"
+        ></app-product-alerts>
+      </div>
+    </div>
+  </div>
+</div>

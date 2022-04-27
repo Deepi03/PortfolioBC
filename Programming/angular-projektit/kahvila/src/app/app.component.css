@@ -1,0 +1,11 @@
+.container {
+    margin-top: 30px;
+  }
+.card {
+    margin-bottom: 1rem;
+}
+.card-body {
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+

@@ -1,0 +1,13 @@
+ <!-- Kahvila-komponentin alku -->
+ <div class="row">
+    <div class="col-md-12">
+      <h1>Coffee sales</h1>
+      <label>Table number</label>
+      <input type="text" class="form-control mb-2" [(ngModel)]="newtableNumber">
+      <label>How many orders</label>
+      <input type="text" class="form-control mb-2" [(ngModel)]="neworderNumber">
+      <button class="btn btn-primary mr-2" (click)="coffeeSold()">Sale</button>
+      <button class="btn btn-primary" (click)="coffeeServed()">Serving</button>
+    </div>
+  </div>
+  <!-- Kahvila-komponentin loppu -->

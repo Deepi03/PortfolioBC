@@ -1,0 +1,12 @@
+
+<div class="from-group">
+<label class="sisennys">Enter your name</label>
+<input type="text"  [(ngModel)] = "username">
+
+<p>{{username}}</p>
+
+
+<button [disabled]="username === ''" class="btn btn-warning" (click)="onResetUsername($event)">Reset</button>
+
+
+</div> 

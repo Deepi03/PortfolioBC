@@ -1,0 +1,6 @@
+<p *ngIf="product.price > 700">
+  <button class="btn btn-primary btn-small" (click)="notify.emit()">
+    <fa-icon [icon]="faSms"></fa-icon>
+    Notify Me
+  </button>
+</p>

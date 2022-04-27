@@ -1,0 +1,26 @@
+img{
+    height: 108%;
+    width: 106%;
+    object-fit: contain;
+}
+
+ @media only screen and (min-width: 320px) {
+    img{
+       object-fit: contain;
+       margin-left: -3rem;
+    }
+   
+}
+
+
+/*tablet*/
+@media only screen and (width: 768px) {
+    img{
+     object-fit: contain;
+    margin-left: -5rem;
+    }
+    .share{
+        margin: 1rem;
+    }
+   
+} 
