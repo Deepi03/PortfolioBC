@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+html {
+    font-size: 62.5%;
+
+}
+/*Kuvat responsiiviseksi*/
+figure img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 1rem;
+    padding: 2rem;
+    
+}
+header {
+    background-color: #69013B;
+    color: #FBDFD1;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+   
+}
+/* Koulun logokuva oikean koko*/
+#logo {
+    width: 10rem;
+    float: right;
+}
+header h1 {
+    font-size: 2.4rem;
+}
+header h2 {
+    font-size: 1.8rem;
+}
+header h3 {
+    font-size: 1.6rem;
+}
+footer {
+    background-color: #69013B;
+    color: #FBDFD1;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    
+}
+a {
+    text-decoration: none;
+    color: #333333;
+    font-style: italic;
+    color: currentColor;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: lightgray;
+}
+.sisennys-2rem {
+    text-indent: 2rem;
+    
+}
+.sisennys-4rem {
+    
+    text-indent: 4rem;
+    color: #33333c;
+    font-style: italic;
+}
+
+.ops {
+    padding: 10px;
+    border: solid #69013B 1px;
+    border-top: 0;
+    border-bottom: 0;
+}
+.ops ol {
+    list-style: decimal;
+    padding-left: 4rem;
+}
+.ops ol li {
+    text-indent: 0;
+    font-size: 1.5rem;
+}
+.angular{
+    font-size: 1.5rem;
+    padding: 3rem;
+    border: solid #69013B 1px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
