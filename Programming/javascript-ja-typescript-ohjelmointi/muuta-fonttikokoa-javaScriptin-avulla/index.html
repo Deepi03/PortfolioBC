@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muuta fonttikokoa javaScriptin avulla</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+   <script src="js/skriptit.js"></script>
+</head>
+<body>
+    <section id="gray">
+    <h1>Tämän listan fonttikoko pitää muuttua nappia painamalla</h1>
+    <ol id="lista">
+        <li id="lista1">Ensimmäinen napin painallus muuttua fonttikoon 20px</li>
+        <li id="lista2">Seuraava napin painallus muuttaa fonttikoon 24px</li>
+        <li id="lista3">Seuraava napin painallus muuttaa fonttikoon 28px</li>
+        <li id="lista4">Seuraava napin painallus muuttaa fonttikoon 32px</li>
+        <li id="lista5">Seuraava napin painallus muuttaa fonttikoon 16px</li>
+    </ol>
+<article id="parent">
+    <button id="btn" type="button" onclick="clickHandler()">Fontin koko</button>
+
+    <p>Napsautusten kokonaismäärä: <span id="showClick"> </span> </p>
+</article>
+</section>
+
+</body>
+</html>

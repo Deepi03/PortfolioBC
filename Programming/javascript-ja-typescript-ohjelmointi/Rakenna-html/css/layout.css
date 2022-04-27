@@ -1,0 +1,65 @@
+/*  html{
+    font-size: 62.5%;
+}
+
+body{
+   
+    border: dotted 0.2rem #9e9e9e;
+}
+#osa1{
+  border-bottom: dotted 0.2rem grey;
+  padding: 1rem;
+}
+
+#osa1 h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    
+}
+
+#osa1 p{
+
+    font-size: 1.8rem;
+    letter-spacing: 0.002rem;
+}
+#osa2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    border-bottom: dotted 0.2rem grey;
+padding: 1rem 1rem 0 1rem;
+}
+
+#osa2 p{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+#osa2 > *{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+#alatunniste{
+font-size: 1.8rem;
+ padding: 1rem;
+}
+
+
+figure{
+    display: block;
+    padding-bottom: 1rem;
+}
+img{
+    max-width: 100%;
+}
+@media only screen and (min-width : 1051px) {
+
+#wrapper{
+
+}
+} */

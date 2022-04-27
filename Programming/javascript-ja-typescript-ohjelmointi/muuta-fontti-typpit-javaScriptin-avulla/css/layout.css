@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:10px;
+}
+h1{
+    font-size: 30px;
+    padding: 1rem;
+    
+}
+ol{
+    padding: 1rem;
+    margin-left: 2rem;
+    list-style: decimal;
+
+}
+li{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+button{
+    margin-left: 3rem;
+}
+#parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#parent > p{
+    flex-grow: 2;
+    text-align: right;
+}
+p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#showClick{
+    padding: 1rem;
+}
+
+#gray{
+    background-color: lightgray;
+    border-radius: 1rem;
+}

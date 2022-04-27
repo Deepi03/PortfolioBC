@@ -1,0 +1,94 @@
+html {
+
+    font-size: 62.5%;
+
+}
+
+
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-size: 1.6rem;
+
+    padding: 1.5rem;
+
+}
+
+
+
+figure img {
+
+    max-width: 100%;
+
+}
+
+
+
+img {
+
+    width: 40%;
+
+}
+
+ul {
+
+    list-style: disc;
+
+    padding: 1rem 1rem 1rem 4rem;
+
+    list-style: 1.5;
+
+}
+
+
+
+h1, h2 {
+
+    font-size: 2.4rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+table {
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+tr {
+
+    line-height: 1.5;
+
+}
+
+td {
+
+    padding-right: 1rem;
+
+}
+
+.rivit-vierekkain{
+    display:inline-flex;
+    flex-flow:row;
+    flex-wrap:wrap;
+}
+
+.even tr:nth-child(even){background-color: grey;
+    margin: 1rem 1rem 0 0};
+
+.odds tr:nth-child(odd){background-color:grey;
+        margin: 1rem 1rem 0 0};
+
+  a .dotted{
+    text-decoration:underline dotted;
+    color: #7F170E;
+    font-weight: bold;
+    font-style: italic;
+}
